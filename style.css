@@ -1,0 +1,176 @@
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, #0a4d8c, #1279c9);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* ICON BAR */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.icon-box {
+    text-align: center;
+    font-size: 16px;
+}
+
+.icon-box span {
+    font-size: 30px;
+    display: block;
+}
+
+/* NAVBAR */
+nav {
+    background: #08335c;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CONTENT */
+section {
+    padding: 30px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #0a4d8c;
+}
+
+/* PACKAGES */
+.package {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 14px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    background: #08335c;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+/* FULL MOBILE FIX */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .icons {
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .icon-box span {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    section {
+        margin: 8px;
+        padding: 16px;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 16px;
+    }
+}
